@@ -1,0 +1,17 @@
+sudo pip install virtualenv
+cd ~/python
+virtualenv env
+source env/bin/activate
+#source env/bin/deactivate
+pip install -r requirements.txt
+#pip freeze > requirements.txt
+#chmod a+x run.py
+
+
+
+
+
+https://github.com/ansrivas/angular2-flask
+http://flask.pocoo.org/docs/0.12/quickstart/
+https://tech.knewton.com/blog/2015/09/best-practices-for-python-dependency-management/
+https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
