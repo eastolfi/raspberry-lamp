@@ -1,0 +1,19 @@
+{
+  "name": "app2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "db:create": "./flask/bin/python db_create.py",
+    "db:migrate": "./flask/bin/python db_migrate.py",
+    "db:upgrade": "./flask/bin/python db_upgrade.py",
+    "db:downgrade": "./flask/bin/python db_downgrade.py",
+    "db:setup": "npm run db:create && db:upgrade",
+    "setup": "virtualenv flask && npm run db:setup",
+    "start": "source flask/bin/activate && python run.py",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
